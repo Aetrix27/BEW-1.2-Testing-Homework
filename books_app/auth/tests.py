@@ -41,6 +41,7 @@ def create_user():
 
 class AuthTests(TestCase):
     """Tests for authentication (login & signup)."""
+
     def setUp(self):
         """Executed prior to each test."""
         app.config['TESTING'] = True

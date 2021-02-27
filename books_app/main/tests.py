@@ -45,6 +45,7 @@ def create_books():
 def create_user():
     password_hash = bcrypt.generate_password_hash("password").decode("utf-8")
     user = User(username="me1", password=password_hash)
+
     db.session.add(user)
     db.session.commit()
 
